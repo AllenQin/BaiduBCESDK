@@ -1,0 +1,12 @@
+{
+    "name": "allenqin/baidu-bcesdk",
+    "description": "baidu BCE SDK",
+    "type": "library",
+    "authors": [
+        {
+            "name": "秦海龙",
+            "email": "qinhailong@zmengzhu.com"
+        }
+    ],
+    "require": {}
+}

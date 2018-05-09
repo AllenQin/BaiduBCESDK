@@ -1,8 +1,8 @@
 <?php
-namespace allenqin\baiduYun;
+namespace allenqin\baiduYunClient;
 use BaiduBce\Services\Lss\LssClient;
 
-class BaiduLssClient
+class BaiduClient
 {
     private static $_instance;
     private static $config;

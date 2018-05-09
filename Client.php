@@ -1,17 +1,17 @@
 <?php
-namespace allenqin\baiduYunClient;
+namespace allenqin\baiduYunBCE;
 use BaiduBce\Services\Lss\LssClient;
 
-class BaiduClient
+class Client
 {
     private static $_instance;
     private static $config;
-    private $client;
+    private $LSSClient;
 
     private function __construct()
     {
         include('./BaiduBce.phar');
-        $this->client = new LssClient(self::$config);
+        $this->LSSClient = new LssClient(self::$config);
     }
 
     /**
@@ -35,8 +35,8 @@ class BaiduClient
      *
      * @return LssClient
      */
-    public function getClient()
+    public function getLSSClient()
     {
-        return $this->client;
+        return $this->LSSClient;
     }
 }

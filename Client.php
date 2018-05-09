@@ -6,12 +6,12 @@ class Client
 {
     private static $_instance;
     private static $config;
-    private $LSSClient;
+    private $lssClient;
 
     private function __construct()
     {
         include('./BaiduBce.phar');
-        $this->LSSClient = new LssClient(self::$config);
+        $this->lssClient = new LssClient(self::$config);
     }
 
     /**
@@ -35,8 +35,8 @@ class Client
      *
      * @return LssClient
      */
-    public function getLSSClient()
+    public function getLssClient()
     {
-        return $this->LSSClient;
+        return $this->lssClient;
     }
 }
